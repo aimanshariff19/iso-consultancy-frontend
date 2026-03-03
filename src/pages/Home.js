@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+<<<<<<< HEAD
 import logo from "../assets/certiq-logo.svg";
+=======
+>>>>>>> df01f98 (Fixed logo import path)
 
 function Home() {
 
@@ -34,11 +37,11 @@ function Home() {
 
     {/* Logo */}
     <div className="flex justify-center mb-8">
-      <img
-        src={logo}
-        alt="Certiq Consulting Group Logo"
-        className="h-28 md:h-36 object-contain"
-      />
+     <img
+  src="/certiq-logo.svg"
+  alt="Certiq Consulting Group Logo"
+  className="h-28 md:h-36 object-contain"
+/>
     </div>
 
     {/* Company Name */}
