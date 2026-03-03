@@ -36,7 +36,7 @@ function Apply() {
 
     try {
       await axios.post(
-        "https://iso-consultancy-backend.onrender.com/api/apply",
+        "https://iso-consultancy-backend.onrender.com/api/clients/apply",
         formData
       );
 
@@ -54,6 +54,7 @@ function Apply() {
       });
 
     } catch (err) {
+      console.error(err);
       setError("Something went wrong. Please try again.");
     }
 
