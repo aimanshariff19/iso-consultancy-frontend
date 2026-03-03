@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/certiq-logo.svg":
+import logo from "../assets/certiq-logo.svg";
 
 function Home() {
 
