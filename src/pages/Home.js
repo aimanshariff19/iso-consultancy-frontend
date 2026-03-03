@@ -33,7 +33,7 @@ function Home() {
 
     {/* Logo */}
     <div className="flex justify-center mb-8">
-     <img
+    <img
   src="/certiq-logo.svg"
   alt="Certiq Consulting Group Logo"
   className="h-28 md:h-36 object-contain"
