@@ -41,7 +41,7 @@ function Navbar() {
           to="/"
           className="text-2xl font-bold text-blue-700 hover:scale-105 transition"
         >
-          ISO Consultancy
+          Certiq consulting group
         </Link>
 
         <div className="flex items-center space-x-8 font-medium">
