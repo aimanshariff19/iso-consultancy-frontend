@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import logo from "./assets/certiq-logo.svg";
 
 function Home() {
 
@@ -27,31 +28,50 @@ function Home() {
     <div className="bg-gray-50">
 
       {/* HERO SECTION */}
-      <section className="bg-white">
+<section className="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-24">
 
-        <div className="w-full h-72 md:h-96 overflow-hidden relative">
-          <img
-            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=60"
-            alt="ISO Consultancy"
-            className="w-full h-full object-cover scale-105 hover:scale-110 transition duration-700"
-          />
-          <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-        </div>
+  <div className="max-w-6xl mx-auto px-6 text-center">
 
-        <div className="max-w-7xl mx-auto px-6 py-16 text-center">
-          <div className="bg-white shadow-xl rounded-2xl p-10 fade-in">
+    {/* Logo */}
+    <div className="flex justify-center mb-8">
+      <img
+        src={logo}
+        alt="Certiq Consulting Group Logo"
+        className="h-28 md:h-36 object-contain"
+      />
+    </div>
 
-            <h1 className="text-5xl font-bold text-gray-900">
-              Global ISO Certification Consultancy
-            </h1>
+    {/* Company Name */}
+    <h1 className="text-5xl md:text-6xl font-bold tracking-wide">
+      Certiq Consulting Group
+    </h1>
 
-            <p className="mt-6 text-gray-600 text-lg max-w-2xl mx-auto">
-              Professional ISO certification guidance, documentation support,
-              audit preparation and compliance management worldwide.
-            </p>
-          </div>
-        </div>
-      </section>
+    {/* Tagline */}
+    <p className="mt-6 text-lg md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+      Professional ISO Certification Consultancy helping startups and enterprises
+      achieve global compliance and structured growth.
+    </p>
+
+    {/* Buttons */}
+    <div className="mt-10 flex justify-center gap-6 flex-wrap">
+      <Link
+        to="/apply"
+        className="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-xl text-white font-semibold transition shadow-lg"
+      >
+        Apply Now
+      </Link>
+
+      <a
+        href="#services"
+        className="border border-white px-8 py-3 rounded-xl hover:bg-white hover:text-gray-900 transition"
+      >
+        Our Services
+      </a>
+    </div>
+
+  </div>
+
+</section>
 
       {/* WAVE DIVIDER */}
       <div className="overflow-hidden leading-none">
@@ -181,19 +201,16 @@ function Home() {
 
       {[
         {
-          name: "Rahul Sharma",
           company: "TechNova Solutions",
           review:
             "The ISO 9001 certification process was smooth and well-structured. Their documentation support was outstanding."
         },
         {
-          name: "Anita Verma",
           company: "GreenLeaf Foods",
           review:
             "Professional guidance throughout the ISO 22000 certification. Clear communication and timely support."
         },
         {
-          name: "Karthik Reddy",
           company: "SecureIT Systems",
           review:
             "We achieved ISO 27001 faster than expected. Highly recommend for startups looking for structured compliance."
@@ -374,7 +391,7 @@ function Home() {
     {/* Brand */}
     <div>
       <h3 className="text-2xl font-bold text-white">
-        ISO Consultancy
+        Certiq Consulting Group
       </h3>
       <p className="mt-4 text-sm text-gray-400">
         Startup-focused ISO certification consultancy providing
@@ -417,7 +434,7 @@ function Home() {
   </div>
 
   <div className="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-500">
-    © {new Date().getFullYear()} ISO Consultancy. All rights reserved.
+    © {new Date().getFullYear()} Certiq Consulting Group. All rights reserved.
   </div>
 </footer>
 

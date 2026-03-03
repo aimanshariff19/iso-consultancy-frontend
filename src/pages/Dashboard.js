@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
@@ -6,7 +6,7 @@ function Dashboard() {
   const navigate = useNavigate();
   const [clients, setClients] = useState([]);
 
-  const fetchClients = async () => {
+  const fetchClients = useCallback(async () => {
     try {
       const token = localStorage.getItem("token");
 
@@ -30,11 +30,11 @@ function Dashboard() {
       localStorage.removeItem("token");
       navigate("/admin-login");
     }
-  };
+  }, [navigate]);
 
   useEffect(() => {
     fetchClients();
-  }, []);
+  }, [fetchClients]);
 
   const handleLogout = () => {
     localStorage.removeItem("token");
@@ -58,7 +58,6 @@ function Dashboard() {
 
   return (
     <div className="min-h-screen bg-gray-100 p-6">
-
       {/* Top Header */}
       <div className="flex justify-between items-center mb-8 bg-white p-4 rounded-xl shadow-md">
 
@@ -81,7 +80,6 @@ function Dashboard() {
         >
           Logout
         </button>
-
       </div>
 
       {/* Clients List */}

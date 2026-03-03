@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 160" width="520" height="160" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <linearGradient id="iconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0B2E5F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1565C0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00BCD4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0097A7;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0B2E5F" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Hexagon Icon Mark -->
+  <g transform="translate(20, 20)" filter="url(#shadow)">
+    <!-- Outer hexagon -->
+    <polygon
+      points="60,0 116,32 116,96 60,128 4,96 4,32"
+      fill="url(#iconGrad)"
+    />
+    <!-- Inner accent ring -->
+    <polygon
+      points="60,10 106,37 106,91 60,118 14,91 14,37"
+      fill="none"
+      stroke="url(#accentGrad)"
+      stroke-width="2.5"
+      opacity="0.6"
+    />
+    <!-- Globe-like lines inside -->
+    <ellipse cx="60" cy="64" rx="28" ry="28" fill="none" stroke="white" stroke-width="1.8" opacity="0.3"/>
+    <ellipse cx="60" cy="64" rx="14" ry="28" fill="none" stroke="white" stroke-width="1.4" opacity="0.25"/>
+    <line x1="32" y1="64" x2="88" y2="64" stroke="white" stroke-width="1.4" opacity="0.25"/>
+    <line x1="35" y1="50" x2="85" y2="50" stroke="white" stroke-width="1" opacity="0.18"/>
+    <line x1="35" y1="78" x2="85" y2="78" stroke="white" stroke-width="1" opacity="0.18"/>
+
+    <!-- Bold checkmark/tick -->
+    <polyline
+      points="38,65 54,81 84,47"
+      fill="none"
+      stroke="white"
+      stroke-width="6"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <!-- Cyan accent dot -->
+    <circle cx="60" cy="120" r="5" fill="url(#accentGrad)" opacity="0.85"/>
+  </g>
+
+  <!-- Text Group -->
+  <g transform="translate(158, 0)">
+    <!-- CERTIQ in bold serif -->
+    <text
+      x="0" y="88"
+      font-family="Georgia, 'Times New Roman', serif"
+      font-size="62"
+      font-weight="700"
+      letter-spacing="3"
+      fill="#0B2E5F"
+    >CERTIQ</text>
+
+    <!-- Cyan underline accent -->
+    <rect x="2" y="97" width="295" height="4" rx="2" fill="url(#accentGrad)"/>
+
+    <!-- CONSULTING GROUP subtitle -->
+    <text
+      x="4" y="126"
+      font-family="Georgia, 'Times New Roman', serif"
+      font-size="16"
+      font-weight="400"
+      letter-spacing="7"
+      fill="#1565C0"
+      opacity="0.85"
+    >CONSULTING GROUP</text>
+  </g>
+
+  <!-- Tagline bottom right -->
+  <text
+    x="518" y="152"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="11"
+    fill="#00BCD4"
+    text-anchor="end"
+    font-style="italic"
+    letter-spacing="1"
+    opacity="0.9"
+  >Standards. Simplified.</text>
+</svg>
